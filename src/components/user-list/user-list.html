@@ -1,0 +1,11 @@
+<ul class="user-list">
+    <li class="user-list__item" v-for="user in users" :key=user.id>
+        <div class="thumbnail">
+            <img :src=user.medium_avatar_url width="72" height="72" alt="">
+        </div>
+        <div class="user-info">
+            <div class="name">{{user.full_name}}</div>
+            <div class="headline">{{user.headline}}</div>
+        </div>
+    </li>
+</ul>
